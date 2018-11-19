@@ -61,7 +61,7 @@ Heres the index.html:
 In order to chat use this:
 
     var Bot = require("socket-io-bot")
-    var bot = new Bot("http://yourchattingwebsite.com")
+    var bot = new Bot("http://localhost:8080")
     bot.message("I am a robot","chat message")
 
 The result should be like:
@@ -69,3 +69,18 @@ The result should be like:
 
 
   [1]:https://i.imgur.com/Znia4UT.png
+
+
+## Wiki
+
+### bot.message(message,event)
+
+`event`: The event the chatting event is used
+`message`:The message the bot should say
+
+### bot.respond(event,messageUserResponded,response,c)
+
+`event`:The chatting event event the bot is supposed to fire
+`messageUserResponded`: The message the user said to make the robot say
+`response`: The message the bot said if `msg == messageUserResponded`
+`c`: The callback
