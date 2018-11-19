@@ -63,3 +63,9 @@ In order to chat use this:
     var Bot = require("socket-io-bot")
     var bot = new Bot("http://yourchattingwebsite.com")
     bot.message("I am a robot","chat message")
+
+The result should be like:
+[![The result][1]][1]
+
+
+  [1]:https://i.imgur.com/Znia4UT.png
