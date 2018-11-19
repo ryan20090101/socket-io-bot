@@ -19,6 +19,7 @@ Lets say you have chat.js with the following code:
     http.listen(port, () => {
       console.log("listening on *:" + port)
     })
+
 Heres the index.html:
 
     <!DOCTYPE html>
@@ -76,11 +77,15 @@ The result should be like:
 ### bot.message(message,event)
 
 `event`: The event the chatting event is used
+
 `message`:The message the bot should say
 
 ### bot.respond(event,messageUserResponded,response,c)
 
 `event`:The chatting event event the bot is supposed to fire
+
 `messageUserResponded`: The message the user said to make the robot say
+
 `response`: The message the bot said if `msg == messageUserResponded`
+
 `c`: The callback
