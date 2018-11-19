@@ -4,6 +4,6 @@
 
 In order to chat use this:
 
-    require("socket-io-bot")
+    var Bot = require("socket-io-bot")
     var bot = new Bot("http://yourchattingwebsite.com")
     bot.message("your chatting event","I am a robot")
