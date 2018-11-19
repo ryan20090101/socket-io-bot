@@ -1,5 +1,5 @@
 var clientSocket = require("socket.io-client")
-function Bot(adress){
+module.exports = function(adress){
   this.socket = clientSocket(adress)
   this.message = function(message,event){
     this.socket.emit(event,message)
