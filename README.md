@@ -62,7 +62,7 @@ Heres the index.html:
 In order to chat use this:
 
     var Bot = require("socket-io-bot")
-    var bot = new Bot("http://localhost:8080")
+    var bot = new Bot("http://localhost:3000")
     bot.message("I am a robot","chat message")
 
 The result should be like:
