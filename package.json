@@ -4,7 +4,7 @@
 "version":"1.0.0",
 "main":"index.js",
 "scripts":{
-"test":"cd.. && if exist .\\socket.io-client ( echo \"socket-io-bot is already installed on your computer\" && exit 0 ) else ( echo \"Error: missing socket.io-client\" && exit 1 )"
+"test":"@echo off && cd.. && if exist .\\socket.io-client ( echo \"socket-io-bot is already installed on your computer\" && exit 0 ) else ( echo \"Error: missing socket.io-client\" && exit 1 )"
 },
 "repository":{
 "type":"git",
